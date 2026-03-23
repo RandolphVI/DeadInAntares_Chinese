@@ -1,0 +1,13 @@
+# Game assets (distributed via GitHub Releases, not repo)
+Dead In Antares_Data/
+BepInEx/
+winhttp.dll
+doorstop_config.ini
+
+# Build artifacts
+src/bin/
+src/obj/
+
+# Runtime files
+*.log
+__pycache__/

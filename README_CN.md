@@ -1,0 +1,38 @@
+# Dead in Antares 简体中文汉化补丁
+
+[Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/) 的社区简体中文汉化补丁。
+
+## 特性
+
+- **12,900+ 条翻译**，覆盖所有界面、对话、任务、物品、技能和教程
+- **游戏内语言切换** — 在选项中选择"中文"即可切换
+- **CJK 字体支持** — 自动加载系统微软雅黑字体，动态 SDF 渲染
+- **Steam 自动识别** — 若 Steam 设置为简体中文，游戏自动选择中文
+
+## 安装方法
+
+1. 在 [Releases](../../releases) 页面下载最新版本的 zip 压缩包
+2. 将压缩包内容**解压到游戏安装目录**：
+   ```
+   Steam/steamapps/common/Dead in Antares/
+   ```
+3. 出现覆盖提示时选择**全部覆盖**
+4. 启动游戏 → **选项 → 语言 → 中文**
+
+## 卸载方法
+
+在 Steam 中：**右键游戏 → 属性 → 已安装文件 → 验证游戏文件完整性**
+
+这会将所有修改过的文件恢复为原始状态。
+
+## 兼容性
+
+- **游戏版本**：基于 2026 年 3 月 Steam 版本制作
+- **系统要求**：Windows 10/11（需要系统自带的微软雅黑字体）
+- **游戏更新**：如果游戏更新，`resources.assets` 可能被覆盖，需重新安装补丁
+
+## 致谢
+
+- **翻译**：DeepSeek API 机翻 + 人工校对
+- **字体插件**：BepInEx 5.x + Harmony + Unity TextMeshPro
+- **游戏**：[Dead in Antares](https://store.steampowered.com/app/2511800/) by Ishtar Games / CCCP
