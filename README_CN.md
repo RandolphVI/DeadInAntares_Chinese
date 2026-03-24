@@ -1,6 +1,6 @@
 # Dead in Antares 简体中文汉化补丁
 
-[Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/) 的社区简体中文汉化补丁。
+[Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/) 的社区简体中文汉化补丁。当前版本：**v1.2**
 
 ## 特性
 
@@ -31,8 +31,6 @@
 - **系统要求**：Windows 10/11（需要系统自带的微软雅黑字体）
 - **游戏更新**：如果游戏更新，`resources.assets` 可能被覆盖，需重新安装补丁
 
-## 致谢
+## 许可
 
-- **翻译**：DeepSeek API 机翻 + 人工校对
-- **字体插件**：BepInEx 5.x + Harmony + Unity TextMeshPro
-- **游戏**：[Dead in Antares](https://store.steampowered.com/app/2511800/) by Ishtar Games / CCCP
+本汉化补丁按原样提供，供个人使用。翻译内容和插件代码以 MIT 许可证发布。游戏资产的版权归其各自的所有者所有。

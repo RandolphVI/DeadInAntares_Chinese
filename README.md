@@ -1,6 +1,6 @@
 # Dead in Antares - Simplified Chinese Localization
 
-Fan-made Simplified Chinese (简体中文) localization patch for [Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/).
+Fan-made Simplified Chinese (简体中文) localization patch for [Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/). Current version: **v1.2**
 
 > [中文说明请看这里 / Chinese README](README_CN.md)
 
@@ -45,12 +45,6 @@ This patch consists of two components:
 2. **BepInEx CJK Font Plugin** — Since the game's bundled TMP fonts (SourceSansPro, Xolonium, LiberationSans) lack CJK glyphs, a BepInEx 5.x plugin creates a dynamic TMP_FontAsset from the system's Microsoft YaHei font at runtime and injects it as a fallback into all game fonts. It also removes italic styling from camp station names for better CJK readability.
 
 Source code for the plugin is available in the [`src/`](src/) directory.
-
-## Credits
-
-- **Translation**: Powered by DeepSeek API, with manual review and corrections
-- **Font Plugin**: BepInEx 5.x + Harmony + Unity TextMeshPro runtime font injection
-- **Game**: [Dead in Antares](https://store.steampowered.com/app/2511800/) by Ishtar Games / CCCP
 
 ## License
 
