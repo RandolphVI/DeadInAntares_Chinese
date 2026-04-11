@@ -1,6 +1,6 @@
 # Dead in Antares 简体中文汉化补丁
 
-[Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/) 的社区简体中文汉化补丁。当前版本：**v1.2**
+[Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/) 的社区简体中文汉化补丁。当前版本：**v1.3**（兼容游戏版本 **1.0.0.28**）
 
 ## 特性
 
@@ -27,9 +27,9 @@
 
 ## 兼容性
 
-- **游戏版本**：基于 2026 年 3 月 Steam 版本制作
+- **游戏版本**：基于 Steam **1.0.0.28** 版本制作（2026 年 4 月）
 - **系统要求**：Windows 10/11（需要系统自带的微软雅黑字体）
-- **游戏更新**：如果游戏更新，`resources.assets` 可能被覆盖，需重新安装补丁
+- **游戏更新**：Steam 更新会覆盖 `resources.assets`。每次游戏更新后请下载最新版本的补丁重新安装。
 
 ## 许可
 

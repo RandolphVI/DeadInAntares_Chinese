@@ -1,6 +1,6 @@
 # Dead in Antares - Simplified Chinese Localization
 
-Fan-made Simplified Chinese (简体中文) localization patch for [Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/). Current version: **v1.2**
+Fan-made Simplified Chinese (简体中文) localization patch for [Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/). Current version: **v1.3** (compatible with game **1.0.0.28**)
 
 > [中文说明请看这里 / Chinese README](README_CN.md)
 
@@ -32,9 +32,9 @@ This restores all modified files to their original state.
 
 ## Compatibility
 
-- **Game version**: Built for the current Steam release (2026-03)
+- **Game version**: Built for Steam release **1.0.0.28** (2026-04)
 - **Platform**: Windows 10/11 (requires Microsoft YaHei font, included with all Windows 10/11 installations)
-- **Game updates**: If the game updates, `resources.assets` may be overwritten. Re-download and apply the patch.
+- **Game updates**: Steam updates will overwrite `resources.assets`. After each game update, re-download the latest patch release and re-apply.
 
 ## Technical Details
 
