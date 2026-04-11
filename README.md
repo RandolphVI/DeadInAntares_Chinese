@@ -1,51 +1,48 @@
-# Dead in Antares - Simplified Chinese Localization
+# Dead in Antares 简体中文汉化补丁
 
-Fan-made Simplified Chinese (简体中文) localization patch for [Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/). Current version: **v1.3** (compatible with game **1.0.0.28**)
+[Dead in Antares](https://store.steampowered.com/app/2511800/Dead_in_Antares/) 的社区简体中文汉化补丁。当前版本：**v1.3**（兼容游戏版本 **1.0.0.28**）
 
-> [中文说明请看这里 / Chinese README](README_CN.md)
+> [English README](README_EN.md)
 
-## Features
+## 特性
 
-- **12,900+ translated text entries** covering all UI, dialogues, quests, items, skills, and tutorials
-- **In-game language switcher** — select "中文" in Options to toggle Chinese
-- **CJK font support** via BepInEx plugin with dynamic SDF rendering (Microsoft YaHei from system fonts)
-- **Automatic Steam language detection** — if Steam is set to Simplified Chinese, the game defaults to Chinese
+- **12,900+ 条翻译**，覆盖所有界面、对话、任务、物品、技能和教程
+- **游戏内语言切换** — 在选项中选择"中文"即可切换
+- **CJK 字体支持** — 自动加载系统微软雅黑字体，动态 SDF 渲染
+- **Steam 自动识别** — 若 Steam 设置为简体中文，游戏自动选择中文
 
-## Installation
+## 安装方法
 
-1. **Download** the latest release zip from the [Releases](../../releases) page
-2. **Extract** the zip contents into your game installation folder:
+1. 在 [Releases](../../releases) 页面下载最新版本的 zip 压缩包
+2. 将压缩包内容**解压到游戏安装目录**：
    ```
    Steam/steamapps/common/Dead in Antares/
    ```
-3. **Overwrite** when prompted — this adds/replaces the following files:
-   - `winhttp.dll`, `doorstop_config.ini` (BepInEx loader)
-   - `BepInEx/` folder (mod framework + Chinese font plugin)
-   - `Dead In Antares_Data/resources.assets` (game data with Chinese translations)
-4. **Launch** the game and go to **Options → Language → 中文**
+3. 出现覆盖提示时选择**全部覆盖**
+4. 启动游戏 → **选项 → 语言 → 中文**
 
-## Uninstallation
+## 卸载方法
 
-In Steam: **Right-click the game → Properties → Installed Files → Verify integrity of game files**
+在 Steam 中：**右键游戏 → 属性 → 已安装文件 → 验证游戏文件完整性**
 
-This restores all modified files to their original state.
+这会将所有修改过的文件恢复为原始状态。
 
-## Compatibility
+## 兼容性
 
-- **Game version**: Built for Steam release **1.0.0.28** (2026-04)
-- **Platform**: Windows 10/11 (requires Microsoft YaHei font, included with all Windows 10/11 installations)
-- **Game updates**: Steam updates will overwrite `resources.assets`. After each game update, re-download the latest patch release and re-apply.
+- **游戏版本**：基于 Steam **1.0.0.28** 版本制作（2026 年 4 月）
+- **系统要求**：Windows 10/11（需要系统自带的微软雅黑字体）
+- **游戏更新**：Steam 更新会覆盖 `resources.assets`。每次游戏更新后请下载最新版本的补丁重新安装。
 
-## Technical Details
+## 技术细节
 
-This patch consists of two components:
+本补丁包含两个部分：
 
-1. **Modified `resources.assets`** — The game's localization CSV files (`Loc_DiV - Loc` and `Loc_DiV - Dialogues`) are patched to include a "中文" column with Chinese translations, appended to the end of the original asset file via binary patching.
+1. **修改后的 `resources.assets`** — 将游戏的本地化 CSV 文件（`Loc_DiV - Loc` 和 `Loc_DiV - Dialogues`）通过二进制补丁的方式追加写入包含中文翻译的 "中文" 列。
 
-2. **BepInEx CJK Font Plugin** — Since the game's bundled TMP fonts (SourceSansPro, Xolonium, LiberationSans) lack CJK glyphs, a BepInEx 5.x plugin creates a dynamic TMP_FontAsset from the system's Microsoft YaHei font at runtime and injects it as a fallback into all game fonts. It also removes italic styling from camp station names for better CJK readability.
+2. **BepInEx CJK 字体插件** — 由于游戏自带的 TMP 字体（SourceSansPro、Xolonium、LiberationSans）不包含 CJK 字形，BepInEx 5.x 插件在运行时动态创建基于系统微软雅黑字体的 TMP_FontAsset，并注入为所有游戏字体的后备字体。同时移除了营地设施名称等样式的斜体效果，使中文显示更美观。
 
-Source code for the plugin is available in the [`src/`](src/) directory.
+插件源代码位于 [`src/`](src/) 目录。
 
-## License
+## 许可
 
-This localization patch is provided as-is for personal use. The translation content and plugin code are released under the MIT License. Game assets remain the property of their respective owners.
+本汉化补丁按原样提供，供个人使用。翻译内容和插件代码以 MIT 许可证发布。游戏资产的版权归其各自的所有者所有。
